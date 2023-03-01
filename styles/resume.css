@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.header-icon{
+    display: flex;
+    align-items: center;
+    color:     #FF5C00;
+
+}
+.header-title{
+   font-weight: bolder;
+   font-size: 27px;
+   margin-left: -30px;
+}
+.buttons{
+    display: flex;
+    gap: 60px;
+}
+.signin{
+    background: #FF5C00;
+    padding: 10px 40px;
+    border: #FF5C00;
+    border-radius: 20px;
+    color:#fff;
+    cursor: pointer;
+    
+}
+.signup{
+    background: #fff;
+    padding: 10px 40px;
+    border: 1px solid #FF5C00;
+    border-radius: 20px;
+    color:#000;
+    cursor: pointer;
+}
+
+.hero-contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 20px 0;
+    background: url('../images/icon/triangle.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: relative;
+}
+
+.position {
+
+    position: relative;
+    top: 40px;
+    left: 100px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;  
+  }
+  
+  @keyframes example {
+    0%   {left:100px; top:40px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% {left:100px; top:40px;}
+  }
+.contents{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.contents h4{
+    font-size: 46.3951px;
+line-height: 58px;
+letter-spacing: 0.01em;
+}
+.contents span{
+    color: #FF5C00;
+}
+.contents > button{
+    background: #FF5C00;
+    padding: 10px 40px;
+    border: #FF5C00;
+    border-radius: 20px;
+    color:#fff;
+    cursor: pointer;
+}
