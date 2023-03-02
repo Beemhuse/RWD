@@ -30,3 +30,14 @@ background-blend-mode: overlay;
 .mydiv{
     display: flex;
 }
+
+#footer{
+    background-color:#063255;
+    background-image: url('../images/left.png'), url('../images/right.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position:bottom left, top right ;
+    background-size: 30px, 35px;
+    height: 40vh;
+    padding-top: 20px;
+
+}
