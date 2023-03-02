@@ -99,3 +99,46 @@ letter-spacing: 0.01em;
     color:#fff;
     cursor: pointer;
 }
+
+#aboutme{
+
+    background-color: #000;
+    color: white;
+    padding: 20px 40px;
+}
+.about-header{
+    text-align: center;
+}
+.item-list{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+#card-item1{
+    background-color: #FF5C00;
+}
+#card-item2{
+background-color: aqua;
+}
+#card-item3{
+background-color: brown;
+}
+.card{
+    width: 300px;
+    height: 200px;
+    padding: 20px 10px;
+}
+.card>h3{
+    text-align: center;
+}
