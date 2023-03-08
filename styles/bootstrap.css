@@ -2,8 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* border: solid red; */
 }
 /* This is for card */
+
+#top{
+    width: 30%;
+}
 #icon{
     color:#F58A07;
     background: rgba(245, 138, 7, 0.1);
@@ -48,5 +53,8 @@ background-blend-mode: overlay;
         height: auto;
         padding-top: 20px;
     
+    }
+    #top{
+        width: 100%;
     }
 }
