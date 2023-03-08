@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
+form{
+    border: solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 600px;
+    margin-left: auto;
+}
+input{
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 15px;
+}
+input::placeholder{
+    color: black;
+}
+
+textarea{
+    height: 80px;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 15px;
+    grid-column: 1 / span 2;
+    width: 100%;
+}
+textarea::placeholder{
+    color: black;
+}
+
+.btn{
+    background: red;
+    border: red;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    scale: 0.9;
+}
