@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            /* border: solid red; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+    
+
+        .grid{
+            display: grid;
+            grid-template-areas: 'header header header header header header'
+            'left main main main main right'
+            'footer footer footer footer footer footer'
+            ;
+        }
+        header{
+            grid-area: header;
+            height: 100vh;
+            /* border: solid Blue; */
+            background: black;
+
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            padding: 20px 50px;
+            justify-content: space-between;
+            color: white;
+        }
+        ul{
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+        }
+.left{
+    grid-area: left;
+    /* border: solid maroon; */
+    background-color: bisque;
+}
+.right{
+    grid-area: right;
+    /* border: solid maroon; */
+    background-color: rgb(72, 96, 122);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: solid green;
+    gap: 40px;
+}
+.items{
+    border: solid red;
+    /* width: 50%; */
+}
+.items > img{
+    width: 100%;
+}
+        main{
+            grid-area: main;
+            height: 30vh;
+            /* border: solid green; */
+            background-color: aqua;
+
+        }
+        footer{
+            grid-area: footer;
+            height: 30vh;
+            /* border: solid red; */
+            background-color: blue;
+
+
+        }
+p{
+    border: solid red;
+    margin-top:100px ;
+    margin-right: 50px;
+    margin-left: 100px;
+padding-top:100px ;
+padding-left: 100px;
+padding-bottom: 60px;
+
+}
+h2{
+    border: solid green;
+    margin-top:  -100px;
+}
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <h2>ONE</h2>
+        <h2>TWO</h2>
+        <h2>THREE</h2>
+    </div> -->
+
+
+<!-- 
+    <div class="grid">
+<header>
+<nav>
+    <div>PAGE</div>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Portfolio</li>
+    </ul>
+</nav>
+</header>
+<section>
+Left
+</section class="left">
+<main>
+Main
+</main>
+<section class="right">
+    
+<div class="items">
+    <p>One</p>
+    <img src="../images/Image.png" alt="">
+</div>
+<div class="items">
+    <p>Two</p>
+    <img src="../images/Image.png" alt="">
+</div>
+<div class="items">
+    <p>Three</p>
+    <img src="../images/Image.png" alt="">
+</div>
+
+</section>
+<footer>
+    Footer
+</footer>
+    </div> -->
+
+
+    <p>COntent</p>
+    <h2>H2 content</h2>
+</body>
+</html>
