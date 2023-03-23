@@ -84,13 +84,13 @@ h1 {
 }
 
 
-#hero{
+#header-content{
 	display: flex;
 	align-items: center;
 	padding: 0 60px;
 	color: white;
 }
-#hero h1{
+#header-content h1{
 	text-transform: uppercase;
 }
 .nft{
@@ -112,9 +112,89 @@ background-clip: text;
 
 
 }
+
+#hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero{
+    width: 520px;
+}
+.hero > h1{
+    font-weight: 400;
+font-size: 60px;
+line-height: 105px;
+}
+.hero > p{
+    font-size: 24px;
+line-height: 36px;
+}
+.hero-buttons{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.explore{
+    background: linear-gradient(270deg, #FFC702 6.12%, rgba(21, 168, 215, 0.47) 139.81%);
+border-radius: 10px;
+padding: 10px 40px;
+color: white;
+border: none;
+cursor: pointer;
+}
+.learn{
+    border: 2px solid #FFFFFF;
+border-radius: 10px;
+padding: 10px 40px;
+background-color: transparent;
+color: white;
+cursor: pointer;
+
+
+}
+.items, .hero-foot>ul{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.items-list, .hero-foot > ul{
+    list-style-type: none;
+}
+.items-list > li, .hero-foot h2{
+    margin-top: 10px;
+}
+.container{
+	/* border: solid red; */
+	height: 500px;
+}
+.hero-card{
+	/* border: solid red; */
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    position: relative;
+    z-index: -1;
+    top: 150px;
+    left: 10px;
+    -ms-transform: skewY(20deg); /* IE 9 */
+    transform: skewY(45deg);
+    transform: skewX(20deg);
+}
+.card-2{
+    height: 400px;
+    width: 400px;
+	background: linear-gradient(270deg, #FFC702 6.12%, rgba(21, 168, 215, 0.47) 139.81%);
+    position: relative;
+    /* border: 2px solid black; */
+    z-index: 2;
+	top: -300px;
+  
+}
 /* Small screen i.e mobiles phones */
 @media screen and (max-width: 600px) {
-	#hero{
+	#header-content{
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;
@@ -125,10 +205,112 @@ background-clip: text;
 		text-align: center;
 		
 	}
-	#hero img{
+	#header-content img{
 		width: 100%;
 	}
 
+	#hero{
+		border: solid red;
+		display: block;
+	
+	}
+	.hero{
+		width: 100%;
+		border: solid green;
+		padding: 20px;
+	}
+	.hero > h1{
+		font-weight: 400;
+	font-size: 40px;
+	line-height: 45px;
+	}
+	.container{
+		padding: 20px;
+	}
+.hero-card{
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    z-index: -1;
+    top: 0px;
+    left: 0;
+    -ms-transform: skewY(20deg); /* IE 9 */
+    transform: skewY(0deg);
+    transform: skewX(0deg);
+}
+
+.card-2{
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(270deg, #FFC702 6.12%, rgba(21, 168, 215, 0.47) 139.81%);
+    position: relative;
+    /* border: 2px solid black; */
+    z-index: 2;
+	top: -300px;
+  
+}
+}
+
+
+/* tablet screen  i.e ipad, tablet devices*/
+
+@media screen and (min-width: 620px) and (max-width: 900px)  {
+	#header-content{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		gap: 20px;
+		justify-content: center;
+	}
+	.header-left{
+		text-align: center;
+		
+	}
+	#header-content img{
+		width: 100%;
+	}
+
+	#hero{
+		border: solid red;
+		display: block;
+	
+	}
+	.hero{
+		width: 100%;
+		border: solid green;
+		padding: 20px;
+	}
+	.hero > h1{
+		font-weight: 400;
+	font-size: 40px;
+	line-height: 45px;
+	}
+	.container{
+		padding: 20px;
+	}
+	.hero-card{
+		height: 400px;
+		width: 100%;
+		background-color: white;
+		position: relative;
+		z-index: -1;
+		top: 0px;
+		left: 0;
+		-ms-transform: skewY(20deg); 
+		transform: skewY(0deg);
+		transform: skewX(0deg);
+	}
+	
+	.card-2{
+		height: 500px;
+		width: 100%;
+		background: linear-gradient(270deg, #FFC702 6.12%, rgba(21, 168, 215, 0.47) 139.81%);
+		position: relative;
+		z-index: 2;
+		top: -300px;
+	  
+	}
 }
 
 @media screen and (max-width: 800px) {
