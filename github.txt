@@ -1,0 +1,7 @@
+# Create an account on github
+# Create a repository
+# Download gitbash to your local computer
+# Configure your gitbash to your github account
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "MY_NAME@example.com"
+# Push your local file to github
