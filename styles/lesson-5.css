@@ -1,0 +1,20 @@
+.color{
+    background-color: darkblue;
+}
+.font-color{
+  color: darkblue;
+
+}
+.color-code{
+    background-color: darkgoldenrod;
+}
+
+#navlist{
+width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+    #navlist{
+        width: 100%;
+        }
+}
