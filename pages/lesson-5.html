@@ -81,6 +81,48 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
+  <script>
+function solution(cards) {
+// write your solution here
+let winner=-1
+cards.forEach(function(card){
+let NoDuplicate= (card.filter((el, _, card) => {
+return card.filter(el2 => el2 === el).length === 1
+}))
+let highCard=Math.max(...NoDuplicate)
+if(winner<highCard){
+winner=highCard;
+}
+})
+return winner;
+}
+
+console.log(solution([[5,5,3]]))
+// console.log(solution( [[5,5], [2,2]]))
+function winningCard(multiArray) {
+    let map = new Set();
+    multiArray.forEach(item => {
+        for (let i = 0; i < item.length; i++) {
+            if (map.has(item[i])) {
+               map.delete(item[i])
+            } else map.add(item[i])
+        }
+    })
+
+    if (map.size === 0) return -1;
+
+    let highest = 0;
+    for (let i of map) {
+        if(i > highest) {
+            highest = i
+        }
+    }
+
+   return highest;
+}
+console.log(winningCard([[5,5,3]]))
+
+  </script>
 </body>
 
 </html>
